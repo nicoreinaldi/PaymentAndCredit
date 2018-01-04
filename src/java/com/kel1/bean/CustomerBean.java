@@ -5,10 +5,12 @@
  */
 package com.kel1.bean;
 
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.Range;
 
 /**
  *
@@ -19,30 +21,30 @@ public class CustomerBean {
     @NotEmpty
     private String customerName;
     @NotEmpty
-    @Email(message = "Email Not Valid")
+    @Email
     private String customerEmail;
     @NotEmpty
     private String customerAddress;
     @NotEmpty
     @Size(min= 11, max = 12, message = "Your number phone must between 11 and 12")
     private String customerTelepon;
-    @NotNull(message ="min value is 0")
-    private int customerTanggungan;
-    @NotNull(message ="min value is 0")
+    @NotNull @Min(1)
+    private Integer customerTanggungan;
+    @NotNull @Min(0)
     private Double customerGaji;
-    @NotNull(message ="min value is 0")
+    @NotNull @Min(0)
     private Double customerPenghasilanTambahan;
     /**
      * @return the customerTanggungan
      */
-    public int getCustomerTanggungan() {
+    public Integer getCustomerTanggungan() {
         return customerTanggungan;
     }
 
     /**
      * @param customerTanggungan the customerTanggungan to set
      */
-    public void setCustomerTanggungan(int customerTanggungan) {
+    public void setCustomerTanggungan(Integer customerTanggungan) {
         this.customerTanggungan = customerTanggungan;
     }
 

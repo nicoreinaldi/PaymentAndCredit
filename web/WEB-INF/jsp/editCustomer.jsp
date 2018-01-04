@@ -78,13 +78,13 @@
                 <tr>
                      
                     <td><a href="${customer.customerId}">${customer.customerId}</a></td>
-                    <td><form:input path="customerName" class="form-control" id="customerName" value="${customer.customerName}"/><form:errors path="customerName" cssClass="error"/> </td>
-                    <td><form:input path="customerEmail" class="form-control" id="customerEmail" value="${customer.customerEmail}"/> <form:errors path="customerEmail" cssClass="error"/></td>
-                    <td><form:input path="customerAddress" class="form-control" id="customerAddress" value="${customer.customerAddress}"/><form:errors path="customerAddress" cssClass="error"/> </td>
-                    <td><form:input path="customerTelepon" class="form-control" id="customerTelepon" value="${customer.customerTelepon}"/><form:errors path="customerTelepon" cssClass="error"/></td>
-                    <td><form:input path="customerTanggungan" class="form-control" id="customerAddress" value="${customer.customerTanggungan}"/> <form:errors path="customerTanggungan" cssClass="error"/></td>
-                    <td><form:input path="customerGaji" class="form-control" id="customerTelepon" value="${customer.customerGaji}"/><form:errors path="customerGaji" cssClass="error"/></td>
-                    <td><form:input path="customerPenghasilanTambahan" class="form-control" id="customerTelepon" value="${customer.customerPenghasilanTambahan}"/><form:errors path="customerPenghasilanTambahan" cssClass="error"/></td>
+                    <td><form:input path="customerName" type="text" class="form-control" id="customerName" value="${customer.customerName}"/><form:errors path="customerName" cssClass="error"/> </td>
+                    <td><form:input path="customerEmail" type="email" class="form-control" id="customerEmail" value="${customer.customerEmail}"/> <form:errors path="customerEmail" cssClass="error"/></td>
+                    <td><form:input path="customerAddress" type="text" class="form-control" id="customerAddress" value="${customer.customerAddress}"/><form:errors path="customerAddress" cssClass="error"/> </td>
+                    <td><form:input path="customerTelepon" type="number" class="form-control" id="customerTelepon" value="${customer.customerTelepon}"/><form:errors path="customerTelepon" cssClass="error"/></td>
+                    <td><form:input path="customerTanggungan" type="number" class="form-control" id="customerAddress" value="${customer.customerTanggungan}"/> <form:errors path="customerTanggungan" cssClass="error"/></td>
+                    <td><form:input path="customerGaji" type="number" class="form-control" id="customerTelepon" value="${customer.customerGaji}"/><form:errors path="customerGaji" cssClass="error"/></td>
+                    <td><form:input path="customerPenghasilanTambahan" type="number" class="form-control" id="customerTelepon" value="${customer.customerPenghasilanTambahan}"/><form:errors path="customerPenghasilanTambahan" cssClass="error"/></td>
    
                    <td><button type="submit" value="Submit" class="btn btn-success">Save</button></td >
                         
